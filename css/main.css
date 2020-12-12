@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Project:  ComingSoon
-Version:  
-Last change:  
+Version:
+Last change:
 Assigned to:  Bach Le
-Primary use:  
+Primary use:
 -------------------------------------------------------------------*/
 
 
@@ -13,22 +13,22 @@ Primary use:
 
 @font-face {
   font-family: Montserrat-Regular;
-  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face {
   font-family: Montserrat-Light;
-  src: url('../fonts/Montserrat/Montserrat-Light.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf');
 }
 
 @font-face {
   font-family: Montserrat-Black;
-  src: url('../fonts/Montserrat/Montserrat-Black.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf');
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
 }
 
 
@@ -350,15 +350,20 @@ input.input100 {
 
 /*//////////////////////////////////////////////////////////////////
 [ Background ]*/
+:root {
+  --mainblue: #3c55a5;
+  --accentblue: #40b8ea;
+  --middleblue: #1560bd;
+}
 .bg0 {background-color: #fff;}
 
 /*---------------------------------------------*/
 .bg-g1 {
-  background: #7918f2;
-  background: -webkit-linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
-  background: -o-linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
-  background: -moz-linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
-  background: linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
+  background: var(--middleblue);
+  background: -webkit-linear-gradient(-45deg, var(--accentblue), var(--middleblue), var(--mainblue));
+  background: -o-linear-gradient(-45deg, var(--accentblue), var(--middleblue), var(--mainblue));
+  background: -moz-linear-gradient(-45deg, var(--accentblue), var(--middleblue), var(--mainblue));
+  background: linear-gradient(-45deg, var(--accentblue), var(--middleblue), var(--mainblue));
 }
 
 
@@ -377,7 +382,7 @@ input.input100 {
 
 
 /*==================================================================
-   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE  
+   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE
 ==================================================================*/
 .where1-parent {
   position: relative;
@@ -391,7 +396,7 @@ input.input100 {
 
 
 /*==================================================================
- HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
+ HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW
 ==================================================================*/
 .placeholder0::-webkit-input-placeholder { color: #999999;}
 .placeholder0:-moz-placeholder { color: #999999;}
@@ -595,7 +600,7 @@ input.input100 {
   .respon1 {
     padding-top: 35px;
   }
-  
+
 }
 
 
